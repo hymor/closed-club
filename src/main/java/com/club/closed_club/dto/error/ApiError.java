@@ -1,4 +1,4 @@
-package com.club.closed_club.dto;
+package com.club.closed_club.dto.error;
 
 import java.time.Instant;
 

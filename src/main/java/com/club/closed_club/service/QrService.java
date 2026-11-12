@@ -77,7 +77,6 @@ public class QrService {
         ));
 
         return new QrScanResponse(
-                member.getId(),
                 member.getName(),
                 newQr.getUuid()
         );

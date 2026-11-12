@@ -1,6 +1,6 @@
 package com.club.closed_club.exception;
 
-import com.club.closed_club.dto.ApiError;
+import com.club.closed_club.dto.error.ApiError;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

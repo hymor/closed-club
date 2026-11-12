@@ -3,8 +3,6 @@ package com.club.closed_club.controller;
 import com.club.closed_club.dto.MemberCreateRequest;
 import com.club.closed_club.dto.MemberResponse;
 import com.club.closed_club.dto.MemberUpdateRequest;
-import com.club.closed_club.entity.Member;
-import com.club.closed_club.repository.MemberRepository;
 import com.club.closed_club.service.MemberService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
@@ -29,8 +27,8 @@ public class MemberController {
     }
 
     @GetMapping("/{id}")
-    public MemberResponse getUserById(@PathVariable Integer id) {
-        return memberService.getUserById(id);
+    public MemberResponse getMemberById(@PathVariable Integer id) {
+        return memberService.getMemberById(id);
     }
 
     @PostMapping
